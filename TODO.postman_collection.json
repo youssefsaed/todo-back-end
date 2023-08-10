@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "7a5a68c4-86d3-4b48-8a00-ac7608b59fa2",
+		"name": "TODO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24459297"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"youssef\",\r\n    \"email\":\"youssef@gmail.com\",\r\n    \"password\":\"1235\",\r\n    \"confirmPassword\":\"123\",\r\n    \"age\":23\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/toDoApp/signUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"toDoApp",
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logIn",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDA3ZjhiN2IzZTIyZTI0ZDQwZDkwMSIsIm5hbWUiOiJhbGkiLCJpc2xvZ2VkSW4iOnRydWUsImlhdCI6MTY3Nzc1NDI2NiwiZXhwIjoxNjc3ODQwNjY2fQ.jEmhnh1m-DDpVGymuJqmjHDWG8gVO5_2n8IYYAjK9xs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"ali@gmail.com\",\r\n    \"password\":\"aaaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/App/toDo/logIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"App",
+								"toDo",
+								"logIn"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"name\":\"amr\",\r\n    \"email\":\"amr5@gmail.com\",\r\n    \"password\":\"asdfghjkl\",\r\n    \"confirmPassword\":\"asdfghjkl\",\r\n    \"age\":23\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/toDo/App/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"toDo",
+								"App",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDA3ZjhiN2IzZTIyZTI0ZDQwZDkwMSIsIm5hbWUiOiJhbGkiLCJpc2xvZ2VkSW4iOnRydWUsImlhdCI6MTY3Nzc1NDI2NiwiZXhwIjoxNjc3ODQwNjY2fQ.jEmhnh1m-DDpVGymuJqmjHDWG8gVO5_2n8IYYAjK9xs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/App/toDo/deleteUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"App",
+								"toDo",
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "todo",
+			"item": [
+				{
+					"name": "addTodo",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "updateTodo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "kjki__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDBhMGIxYmJmNDJhNzdiNTliNzE4MCIsIm5hbWUiOiJhbGkiLCJpc2xvZ2VkSW4iOnRydWUsImlhdCI6MTY3Nzc2Mjc0OCwiZXhwIjoxNjc3ODQ5MTQ4fQ.EftWqMMQerz7umt_UBVFgvgUAYL6seMMvtbBrMHkGMY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/App/toDo/updateTodo?DoId=6400b2fc44b73ef597dc1933",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"App",
+								"toDo",
+								"updateTodo"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "DoId",
+									"value": "6400b2fc44b73ef597dc1933"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTodo",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "kjki__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDBhMGIxYmJmNDJhNzdiNTliNzE4MCIsIm5hbWUiOiJhbGkiLCJpc2xvZ2VkSW4iOnRydWUsImlhdCI6MTY3Nzc2Mjc0OCwiZXhwIjoxNjc3ODQ5MTQ4fQ.EftWqMMQerz7umt_UBVFgvgUAYL6seMMvtbBrMHkGMY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/App/toDo/deleteTodo?DoId=6400a142bbf42a77b59b718d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"App",
+								"toDo",
+								"deleteTodo"
+							],
+							"query": [
+								{
+									"key": "DoId",
+									"value": "6400a142bbf42a77b59b718d"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchByTitle",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "getToDoWithUser",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "clearAllTodo",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "kjki__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDA3NDRkNjUxMWI4ZTEzYTliYjQwMiIsIm5hbWUiOiJhbXIiLCJpc2xvZ2VkSW4iOnRydWUsImlhdCI6MTY3Nzc1MTM5MywiZXhwIjoxNjc3ODM3NzkzfQ.6Mjuluc4wtxTorFwETHui5Nu_sCyQ706LYYlihMAor8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/App/toDo/clearTodo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"App",
+								"toDo",
+								"clearTodo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
